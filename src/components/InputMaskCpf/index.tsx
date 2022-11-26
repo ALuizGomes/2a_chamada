@@ -1,0 +1,16 @@
+import React from 'react'
+
+import { TextInputProps } from 'react-native'
+
+import { Container, InputStyle } from './styles'
+
+type InputProps = TextInputProps
+
+export function InputMaskCpf({ ...rest }: InputProps) {
+  return (
+    <Container>
+      <InputStyle type={'cpf'} {...rest} />
+    </Container>
+  )
+}
+
